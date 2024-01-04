@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+    <body>
+        <div id="header">
+            <!--hero section--->
+        <div class="hero">
+            <nav>
+                <h2 class="logo">Portf<span>olio</span></h2>
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact me">Contact Me</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="content">
+                <h4> Hello,my name is</h4>
+                <h1>Tanveer <span>Aamina</span></h1>
+                <h3>Iam a Learner.</h3>
+                <div class="newslatter">
+                    <form>
+                        <input type="email" name="email" id="mail" placeholder="Enter your Email">
+                        <input type="submit" name="submit" value="Lets start">
+                    </form> 
+                </div>
+             </div>          
+        </div>
+    </div>
+        <!----About section-->
+        <section class="about">
+            <div class="main">
+                <img src="bg.jpg">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <h5> Ambitious <span>Student</span></h5>
+                    <p>Iam an enthusiastic,self motivated,reliable,hard working,efficient and has the ability to create new ideas and innovate new things and is mature enough to lead and manage the team.</p>
+                    <button type="button">Let's Talk</button>
+                </div>
+            </div>   
+        </section>
+
+
+        <!---Project-->
+        <div class="project">
+            <div class="title">
+            <h2>My Projects </h2>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <i class="fa-solid fa-bars"></i>
+                    <h5>CV Drive-AI Project</h5>
+                    <div class="pra">
+                        <p>I was a part of a workshop where we developed a python program for palm detection using openCV and mediapipe libraries.</p>
+                        <p style="text-align: center;">
+                            <a class="button" href='#'>Read More</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa-light fa-bell"></i>
+                    <h5>Drone Model</h5>
+                    <div class="pra">
+                        <p>I was a team member on a project that involve building a simple drone using arduino uno and ESC's.</p>
+                        <p style="text-align: center;">
+                            <a class="button" href='#'>Read More</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa-sharp fa-solid fa-car"></i>
+                    <h5>Bluetooth Model Car</h5>
+                    <div class="pra">
+                        <p>Using Arduino Uno and bluetooth module,created a Car that can be controlled using bluetooth.</p>
+                        <p style="text-align: center;">
+                            <a class="button" href='#'>Read More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+
+        <!--- Contact Me----->
+        <div class="contact-me">
+            <p>Want To Know More About Me!</p>
+            <a class="button-two" href="#"> Contact Me</a>
+        </div>
+        <!--------Java script------------>
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+    
+</body>
+</html>
